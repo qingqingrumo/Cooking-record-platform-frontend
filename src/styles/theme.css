@@ -1,0 +1,150 @@
+:root {
+  --brand-bg: #f7f8fb;
+  --brand-bg-strong: #eef1f6;
+  --brand-surface: #ffffff;
+  --brand-surface-strong: #f3f5f9;
+  --brand-primary: #2563eb;
+  --brand-primary-strong: #1d4ed8;
+  --brand-accent: #fb7185;
+  --brand-text: #1f2937;
+  --brand-muted: #6b7280;
+  --brand-border: rgba(31, 41, 55, 0.12);
+  --brand-card-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+  --brand-radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "SF Pro Display", "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(180deg, #f8fafc 0%, #eef1f6 40%, #f8fafc 100%);
+  color: var(--brand-text);
+  min-height: 100vh;
+}
+
+a {
+  color: var(--brand-primary);
+}
+
+.ant-layout {
+  background: transparent;
+}
+
+.ant-layout-header,
+.ant-layout-footer {
+  background: transparent;
+}
+
+.ant-btn-primary {
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent));
+  border: none;
+  box-shadow: 0 10px 30px rgba(121, 246, 255, 0.25);
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  background: linear-gradient(135deg, var(--brand-accent), var(--brand-primary));
+}
+
+.ant-card {
+  background: var(--brand-surface);
+  border: 1px solid var(--brand-border);
+  border-radius: var(--brand-radius);
+  box-shadow: var(--brand-card-shadow);
+  overflow: hidden;
+}
+
+.ant-card-hoverable {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.ant-card-hoverable:hover {
+  transform: translateY(-4px);
+  border-color: var(--brand-primary);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.12);
+}
+
+.ant-menu {
+  background: transparent;
+}
+
+.ant-menu-horizontal {
+  border-bottom: none;
+}
+
+.ant-menu-item-selected,
+.ant-menu-item-active {
+  color: var(--brand-primary) !important;
+}
+
+.ant-tabs-nav {
+  margin-bottom: 12px !important;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--brand-primary);
+}
+
+.ant-tabs-ink-bar {
+  background: var(--brand-primary);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--brand-border);
+  color: var(--brand-text);
+}
+
+.frosted {
+  background: var(--brand-surface);
+  border: 1px solid var(--brand-border);
+  box-shadow: var(--brand-card-shadow);
+}
+
+.glass-strong {
+  background: var(--brand-surface-strong);
+  border: 1px solid var(--brand-border);
+  box-shadow: var(--brand-card-shadow);
+}
+
+.pill {
+  border-radius: 999px;
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, var(--brand-primary), var(--brand-primary-strong));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.soft-border {
+  border: 1px solid var(--brand-border);
+}
+
+.layout-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.floating-orb {
+  display: none;
+}
+
+@keyframes drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(10px, -12px, 0) scale(1.06);
+  }
+}
+

@@ -1,0 +1,26 @@
+import { defineStore } from "pinia";
+import { ref } from "vue";
+import { getLoginUserUsingGet } from '@/api/userController'
+
+export const useLoginUserStore = defineStore("loginUser", () => {
+  const loginUser = ref<API.UserLoginVo>({
+    userName: "Not logged in",
+  });
+
+  async function fetchLoginUser() {
+    const res = await getLoginUserUsingGet()
+    console.log("result" + res.data.data);
+
+    if (res.data.code === 0 && res.data.data) {
+      loginUser.value = res.data.data
+    }
+    console.log(res.data.data);
+  }
+
+
+  function setLoginUser(newLoginUser: any) {
+    loginUser.value = newLoginUser;
+  }
+
+  return { loginUser, setLoginUser, fetchLoginUser };
+});

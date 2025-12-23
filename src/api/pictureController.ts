@@ -1,0 +1,290 @@
+// @ts-ignore
+/* eslint-disable */
+import request from '@/plugins/myAxios'
+
+/** deletePicture POST /api/picture/delete */
+export async function deletePictureUsingPost(
+  body: API.PictureDeleteRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/picture/delete', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** deletePictureByBatch POST /api/picture/delete/batch */
+export async function deletePictureByBatchUsingPost(
+  body: API.PictureDeleteByBatchRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/picture/delete/batch', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** editPicture POST /api/picture/edit */
+export async function editPictureUsingPost(
+  body: API.PictureEditRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/picture/edit', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** editPictureByBatch POST /api/picture/edit/batch */
+export async function editPictureByBatchUsingPost(
+  body: API.PictureEditByBatchRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/picture/edit/batch', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** getPictureById GET /api/picture/get */
+export async function getPictureByIdUsingGet(
+  // Param type (non-body params from swagger)
+  params: API.getPictureByIdUsingGETParams,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponsePicture_>('/api/picture/get', {
+    method: 'GET',
+    params: {
+      ...params,
+    },
+    ...(options || {}),
+  })
+}
+
+/** getPictureVoById GET /api/picture/get/vo */
+export async function getPictureVoByIdUsingGet(
+  // Param type (non-body params from swagger)
+  params: API.getPictureVoByIdUsingGETParams,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponsePictureVo_>('/api/picture/get/vo', {
+    method: 'GET',
+    params: {
+      ...params,
+    },
+    ...(options || {}),
+  })
+}
+
+/** listPictureByPage POST /api/picture/list/page */
+export async function listPictureByPageUsingPost(
+  body: API.PictureQueryRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponsePagePicture_>('/api/picture/list/page', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** listPictureVoByPage POST /api/picture/list/page/vo */
+export async function listPictureVoByPageUsingPost(
+  body: API.PictureQueryRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponsePagePictureVo_>('/api/picture/list/page/vo', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** listPictureVoByPageWithCache POST /api/picture/list/page/vo/cache */
+export async function listPictureVoByPageWithCacheUsingPost(
+  body: API.PictureQueryRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponsePagePictureVo_>('/api/picture/list/page/vo/cache', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** doPictureReview POST /api/picture/review */
+export async function doPictureReviewUsingPost(
+  body: API.PictureReviewRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/picture/review', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** doPictureReviewByBatch POST /api/picture/review/batch */
+export async function doPictureReviewByBatchUsingPost(
+  body: API.PictureReviewByBatchRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/picture/review/batch', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** searchPictureByPicture POST /api/picture/search/picture */
+export async function searchPictureByPictureUsingPost(
+  body: API.SearchPictureByPictureRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseListImageSearchResult_>('/api/picture/search/picture', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** listPictureTagCategory GET /api/picture/tag_category */
+export async function listPictureTagCategoryUsingGet(options?: { [key: string]: any }) {
+  return request<API.BaseResponsePictureTagCategory_>('/api/picture/tag_category', {
+    method: 'GET',
+    ...(options || {}),
+  })
+}
+
+/** updatePicture POST /api/picture/update */
+export async function updatePictureUsingPost(
+  body: API.PictureUpdateRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseBoolean_>('/api/picture/update', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** uploadPicture POST /api/picture/upload */
+export async function uploadPictureUsingPost(
+  // Param type (non-body params from swagger)
+  params: API.uploadPictureUsingPOSTParams,
+  body: {},
+  file?: File,
+  options?: { [key: string]: any },
+) {
+  const formData = new FormData()
+
+  if (file) {
+    formData.append('file', file)
+  }
+
+  Object.keys(body).forEach((ele) => {
+    const item = (body as any)[ele]
+
+    if (item !== undefined && item !== null) {
+      if (typeof item === 'object' && !(item instanceof File)) {
+        if (item instanceof Array) {
+          item.forEach((f) => formData.append(ele, f || ''))
+        } else {
+          formData.append(ele, JSON.stringify(item))
+        }
+      } else {
+        formData.append(ele, item)
+      }
+    }
+  })
+
+  return request<API.BaseResponsePictureVo_>('/api/picture/upload', {
+    method: 'POST',
+    params: {
+      ...params,
+    },
+    data: formData,
+    requestType: 'form',
+    ...(options || {}),
+  })
+}
+
+/** uploadPictureByBatch POST /api/picture/upload/batch */
+export async function uploadPictureByBatchUsingPost(
+  body: API.PictureUploadByBatchRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponseInt_>('/api/picture/upload/batch', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
+
+/** uploadPictureByUrl POST /api/picture/upload/url */
+export async function uploadPictureByUrlUsingPost(
+  body: API.PictureUploadRequest,
+  options?: { [key: string]: any },
+) {
+  return request<API.BaseResponsePictureVo_>('/api/picture/upload/url', {
+    method: 'POST',
+    headers: {
+      'Accept-Charset': 'utf-8',
+      'Content-Type': 'application/json;charset=UTF-8',
+    },
+    data: body,
+    ...(options || {}),
+  })
+}
