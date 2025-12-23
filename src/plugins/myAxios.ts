@@ -2,11 +2,11 @@ import axios from 'axios'
 import { message } from 'ant-design-vue'
 // Distinguish dev and prod
 const DEV_BASE_URL = "http://localhost:8123";
-const PROD_BASE_URL = "https://picture-share-platform-xjzai-bsete9gmckfdfudg.centralindia-01.azurewebsites.net";
+const PROD_BASE_URL = "https://cooking-reord-platform-backend-qingqingrumo-arf6gfdvhceph4hx.centralindia-01.azurewebsites.net";
 // Create Axios instance
 const myAxios = axios.create({
-  // baseURL: PROD_BASE_URL,
-  baseURL: DEV_BASE_URL,
+  baseURL: PROD_BASE_URL,
+  // baseURL: DEV_BASE_URL,
   timeout: 60000,
   withCredentials: true,
 })
