@@ -9,7 +9,7 @@
           allow-clear
         />
       </a-form-item>
-      <a-form-item label="Cuisine" name="category">
+      <a-form-item label="Ingredients" name="category">
         <a-auto-complete
           v-model:value="searchParams.category"
           style="min-width: 180px"

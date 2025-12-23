@@ -47,25 +47,16 @@
 
     <div class="search-panel frosted">
       <div class="search-bar">
-        <a-input-search
-          placeholder="Type a dish or note to search your menus"
-          v-model:value="searchParams.searchText"
-          enter-button="Search menus"
-          size="large"
-          @search="doSearch"
-        />
+        <a-input-search placeholder="Type a dish or note to search your menus" v-model:value="searchParams.searchText"
+          enter-button="Search menus" size="large" @search="doSearch" />
       </div>
     </div>
 
     <div class="list-section">
       <PictureList :dataList="dataList" :loading="loading" />
       <div class="pagination-bar">
-        <a-pagination
-          v-model:current="searchParams.current"
-          v-model:pageSize="searchParams.pageSize"
-          :total="total"
-          @change="onPageChange"
-        />
+        <a-pagination v-model:current="searchParams.current" v-model:pageSize="searchParams.pageSize" :total="total"
+          @change="onPageChange" />
       </div>
     </div>
   </div>

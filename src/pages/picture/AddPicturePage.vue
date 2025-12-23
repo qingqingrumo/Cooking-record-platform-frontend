@@ -18,7 +18,7 @@
             <a-textarea v-model:value="pictureForm.introduction" placeholder="Add cooking notes or description"
               :autoSize="{ minRows: 5, maxRows: 5 }" allowClear />
           </a-form-item>
-          <a-form-item label="Cuisine" name="category">
+          <a-form-item label="Ingredients" name="category">
             <a-auto-complete v-model:value="pictureForm.category" :options="categoryOptions" placeholder="e.g. appetizer, main, dessert"
               allowClear />
           </a-form-item>

@@ -25,8 +25,8 @@
                 {{ picture.introduction ?? '-' }}
               </div>
             </a-descriptions-item>
-            <a-descriptions-item label="Cuisine">
-              {{ picture.category ?? 'Cuisine' }}
+            <a-descriptions-item label="Ingredients">
+              {{ picture.category ?? 'Ingredients' }}
             </a-descriptions-item>
             <a-descriptions-item label="Tips">
               <a-tag v-for="tag in picture.tags" :key="tag">

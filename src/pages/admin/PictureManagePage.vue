@@ -18,7 +18,7 @@
           allow-clear
         />
       </a-form-item>
-      <a-form-item label="Cuisine" name="category">
+      <a-form-item label="Ingredients" name="category">
         <a-input v-model:value="searchParams.category" placeholder="Enter cuisine" allow-clear />
       </a-form-item>
       <a-form-item>
@@ -84,7 +84,7 @@ const columns = [
     // ellipsis: true,
   },
   {
-    title: 'Cuisine',
+    title: 'Ingredients',
     dataIndex: 'category',
     width: 100,
   },
